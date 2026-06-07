@@ -1,0 +1,367 @@
+@font-face {
+  font-family: "강원교육튼튼";
+  src: url("./fonts/강원교육튼튼.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #b8b8b8;
+  color: #333438;
+  font-family: "강원교육튼튼", Arial, sans-serif;
+  font-weight: 700;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+.page {
+  width: 1024px;
+  height: 4200px;
+  margin: 0 auto;
+  background-color: #b8b8b8;
+  border: 8px solid #b8b8b8;
+  overflow: hidden;
+}
+
+.section {
+  position: relative;
+  border-bottom: 1px solid #5d5d5d;
+}
+
+.main-section {
+  height: 680px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top-nav {
+  position: fixed;
+  top: 160px;
+  left: 50%;
+  margin-left: 540px;
+  width: 120px;
+  z-index: 100;
+}
+
+.nav-logo {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu a {
+  display: block;
+  width: 110px;
+  padding: 10px 0;
+  color: #333438;
+  background-color: #b8b8b8;
+  border: 1px solid #747474;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  background-color: #333438;
+  color: #b8b8b8;
+}
+
+.title-box {
+  margin-top: 35px;
+}
+
+.title-box h1 {
+  font-size: 58px;
+  line-height: 58px;
+}
+
+.sub-title {
+  margin-top: 34px;
+  font-size: 22px;
+}
+
+.intro-text {
+  margin-top: 32px;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.about-section {
+  height: 690px;
+  padding-top: 160px;
+  text-align: center;
+}
+
+.about-section h2,
+.strength-section h2,
+.skill-section h2 {
+  font-size: 34px;
+}
+
+.about-section p {
+  margin-top: 70px;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.profile-section {
+  height: 690px;
+  display: flex;
+  align-items: center;
+  padding-left: 120px;
+  gap: 100px;
+}
+
+.photo-box {
+  width: 300px;
+  height: 330px;
+  border: 2px solid #333438;
+  background-color: #333438;
+}
+
+.photo-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-list {
+  padding: 0;
+  list-style: none;
+  font-size: 22px;
+  line-height: 50px;
+}
+
+.profile-list span {
+  display: inline-block;
+  width: 42px;
+  text-align: center;
+}
+
+.strength-section {
+  height: 700px;
+  padding-top: 180px;
+  text-align: center;
+}
+
+.strength-list {
+  width: 820px;
+  margin: 70px auto 0;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 19px;
+}
+
+.strength-list li {
+  display: grid;
+  grid-template-columns: 250px 220px 1fr;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.line {
+  width: 190px;
+  height: 1px;
+  background-color: #666;
+}
+
+.strength-list p:last-child {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.skill-section {
+  height: 690px;
+  padding-top: 160px;
+  text-align: center;
+}
+
+.skill-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 70px;
+}
+
+.skill-box {
+  width: 328px;
+  height: 300px;
+  padding: 26px 35px;
+  border: 1px solid #747474;
+  text-align: left;
+  font-size: 20px;
+}
+
+.skill-box ul {
+  margin-bottom: 35px;
+  padding-left: 20px;
+}
+
+.skill-box li:first-child {
+  font-weight: 900;
+}
+
+.soon-section {
+  height: 734px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: none;
+}
+
+.soon-section h2 {
+  margin-bottom: 180px;
+  font-size: 44px;
+}
+
+.top-shape {
+  position: absolute;
+  top: 0;
+  right: 35px;
+  width: 470px;
+  height: 140px;
+}
+
+.tri {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  border-bottom: 85px solid #333438;
+}
+
+.t1 {
+  left: 0;
+  top: 30px;
+  border-bottom-color: #303136;
+  transform: rotate(285deg);
+}
+
+.t2 {
+  left: 65px;
+  top: 0;
+  border-bottom-color: #7b7c7d;
+  transform: rotate(25deg);
+}
+
+.t3 {
+  left: 120px;
+  top: 45px;
+  border-bottom-color: #8e8f8f;
+  transform: rotate(260deg);
+}
+
+.t4 {
+  left: 185px;
+  top: -5px;
+  border-bottom-color: #333438;
+  transform: rotate(10deg);
+}
+
+.t5 {
+  left: 250px;
+  top: 45px;
+  border-bottom-color: #5d5e60;
+  transform: rotate(270deg);
+}
+
+.t6 {
+  left: 310px;
+  top: 0;
+  border-bottom-color: #28292d;
+  transform: rotate(50deg);
+}
+
+.t7 {
+  left: 375px;
+  top: 20px;
+  border-bottom-color: #8b8c8c;
+  transform: rotate(290deg);
+}
+
+.t8 {
+  left: 115px;
+  top: 90px;
+  border-bottom-color: #2b2c30;
+  transform: rotate(75deg);
+}
+
+.t9 {
+  left: 210px;
+  top: 85px;
+  border-bottom-color: #9b9c9c;
+  transform: rotate(245deg);
+}
+
+.bottom-shape {
+  position: absolute;
+  left: 40px;
+  bottom: -10px;
+  width: 470px;
+  height: 150px;
+}
+
+.b1 {
+  left: 0;
+  top: 80px;
+  border-bottom-color: #333438;
+  transform: rotate(245deg);
+}
+
+.b2 {
+  left: 70px;
+  top: 65px;
+  border-bottom-color: #2b2c30;
+  transform: rotate(20deg);
+}
+
+.b3 {
+  left: 135px;
+  top: 55px;
+  border-bottom-color: #8d8e8e;
+  transform: rotate(270deg);
+}
+
+.b4 {
+  left: 205px;
+  top: 40px;
+  border-bottom-color: #333438;
+  transform: rotate(35deg);
+}
+
+.b5 {
+  left: 270px;
+  top: 80px;
+  border-bottom-color: #666769;
+  transform: rotate(260deg);
+}
+
+.b6 {
+  left: 335px;
+  top: 95px;
+  border-bottom-color: #242529;
+  transform: rotate(105deg);
+}
+
+.b7 {
+  left: 150px;
+  top: 100px;
+  border-bottom-color: #4b4c4f;
+  transform: rotate(115deg);
+}
